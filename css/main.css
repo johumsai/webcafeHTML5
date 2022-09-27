@@ -27,7 +27,31 @@ html, body{
 .main{
   background-color: blue;
   height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 30px 15px;
 }
+
+.group{
+  
+}
+
+.group1{
+  background-color: pink;
+  width: 250px;
+}
+
+.group2{
+  background-color: lime;
+  width: 380px;
+}
+
+.group3{
+  background-color: salmon;
+  width: 190px;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: aqua;
