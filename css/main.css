@@ -1,3 +1,6 @@
+@import url(./fonts.css);
+@import url(./fontello.css);
+
 /* 기본 글꼴 - 웹폰트 */
 html, body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -108,8 +111,7 @@ a{
 
 /* 메인 메뉴 */
 .navigation{
-  background-color: yellow;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 }
 
 .menu{
@@ -140,6 +142,7 @@ a{
 }
 
 .menu-button{
+  cursor: pointer;
   background: transparent;
   border: 0;
   padding: 0 23px;
@@ -166,7 +169,6 @@ a{
   margin: 0;
   padding-left: 0;
   list-style: none;
-  background-color: lime;
   display: none;
   position: absolute;
   top: 47px;
@@ -176,8 +178,26 @@ a{
 .sub-menu li{
   display: inline-block;
 }
-
-
+.sub-menu a{
+  display: inline-block;
+  padding: 6px 10px;
+}
+.sub-menu a::before{
+  content: "\f192";
+  font-family: 'fontello';
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+}
+.sub-menu a:focus{
+  outline: none;
+}
+.sub-menu a:hover, .sub-menu a:focus{
+  color: #f00;
+}
+.sub-menu a:hover::before, .sub-menu a:focus::before{
+  content: "\e800";
+}
 /* 비주얼 */
 .visual{
   height: 10vh;
