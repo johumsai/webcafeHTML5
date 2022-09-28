@@ -297,6 +297,82 @@ a{
   width: 190px;
 }
 
+/* 로그인 */
+.login{
+  background: radial-gradient(circle at right top, #db6c2b, #dd422a);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+
+.login-title{
+  font-size: 1.5rem;
+  color: #ff0;
+  margin: 0 0 10px 10px;
+}
+
+.login-form{
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+}
+
+.login-form div{
+  margin-bottom: 6px;
+}
+
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 90px;
+  height: 22px;
+  padding: 1px 1px 1px 8px;
+}
+
+.button-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8852e;
+  background-color: #ed552f;
+  color: #fff;
+  padding: 0;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.sign{
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign a{
+  padding: 6px 0;
+  font-size: 1.3rem;
+}
+
+.sign .icon-right-open::before{
+  color: #dd422a;
+}
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
