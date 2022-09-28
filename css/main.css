@@ -18,6 +18,29 @@ a{
   box-sizing: border-box;
 }
 
+/* 건너뛰기 링크 */
+.skip-nav{
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.skip-nav a{
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+}
+
+.skip-nav a:focus{
+  outline-offset: -4px;
+  position: static;
+}
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
