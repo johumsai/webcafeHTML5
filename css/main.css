@@ -2,9 +2,27 @@
 html, body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+html{
+  font-size: 10px;
+}
+
 body{
+  font-size: 1.4rem;
   color: #000;
   background-color: #ccc;
+}
+
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /* 링크 스타일 */
@@ -51,23 +69,19 @@ a{
   position: relative;
   padding: 0 30px;
   background-color: #fff;
-  height: 120px;
   border-radius: 0 0 15px 15px;
 }
-
 /* 로고 */
 .logo{
   margin: 0;
   font-size: 1em;
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: 60px;
 }
-
 .logo a{
   display: block;
 }
-
 .logo img{
   vertical-align: top;
 }
@@ -92,6 +106,76 @@ a{
   padding: 6px 10px;
 }
 
+/* 메인 메뉴 */
+.navigation{
+  background-color: yellow;
+  padding-bottom: 45px;
+}
+
+.menu{
+  border-top: 2px solid #000;
+  height: 47px;
+  margin: 0;
+  padding-left: 230px;
+  list-style: none;
+  background: #dd422a linear-gradient(to bottom, #db6c2b 1%,#dd422a 30%,#dd422a 70%,#db6c2b 100%);
+  border-radius: 0 0 5px 5px;
+}
+
+.menu-item{
+  position: relative;
+  float: left;
+  border-left: 2px solid #fff;
+}
+
+.is-active .menu-button{
+  color: #ff0;
+}
+
+.is-active .menu-button::after{
+  content: "";
+  display: block;
+  background: #000;
+  height: 2px;
+}
+
+.menu-button{
+  background: transparent;
+  border: 0;
+  padding: 0 23px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+}
+
+.is-active .sub-menu{
+  display: block;
+}
+
+.menu-html, .menu-css, .menu-standards{
+  left: 0;
+}
+
+.menu-accessibility, .menu-qna, .menu-archive{
+  right: 0;
+}
+
+.sub-menu{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  background-color: lime;
+  display: none;
+  position: absolute;
+  top: 47px;
+  white-space: nowrap;
+}
+
+.sub-menu li{
+  display: inline-block;
+}
 
 
 /* 비주얼 */
