@@ -375,7 +375,6 @@ a{
 
 /* 유효성 검사 배너 */
 .validation{
-  background-color: yellow;
   margin-top: 25px;
 }
 
@@ -384,15 +383,20 @@ a{
   padding-left: 0;
   list-style: none;
 }
-
 .validation-list li{
-  background-color: pink;
-}
-
+  margin-top: 10px;
+  }
 .validation-list a{
-  background-color: lime;
-}
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 8px 20px 8px 45px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%,#ccc linear-gradient(#ccc, #eee) ;
 
+}
+.validation-list a:hover, .validation-list a:focus{
+  color: #f00;
+}
 
 /* 슬로건 */
 .slogan{
