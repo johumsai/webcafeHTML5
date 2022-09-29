@@ -373,6 +373,27 @@ a{
   color: #dd422a;
 }
 
+/* 유효성 검사 배너 */
+.validation{
+  background-color: yellow;
+  margin-top: 25px;
+}
+
+.validation-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.validation-list li{
+  background-color: pink;
+}
+
+.validation-list a{
+  background-color: lime;
+}
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
