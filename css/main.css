@@ -621,7 +621,12 @@ a{
 }
 
 .news-item-title::before{
-  content: "■ ";
+  /* content: "■ "; */
+  /* content: "★ "; */
+  /* content: attr(class); */
+  content: attr(name);
+  color: #f00;
+  /* background-color: yellow; */
 }
 
 .news-item-brief{

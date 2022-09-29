@@ -3,7 +3,7 @@
   // DOM 선택하기
   var menuItems = document.querySelectorAll('.menu-item');
   var boardTabs = document.querySelectorAll('.board-tab');
-  var boardTabPanels = document.querySelectorAll('.board-tab-panel');
+  var boardTabPanels = document.querySelectorAll('.board-panel');
 
   // 메인 메뉴 제어하기
   for(var i = 0; i < menuItems.length; i++){
