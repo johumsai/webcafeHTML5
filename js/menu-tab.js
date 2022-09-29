@@ -2,7 +2,7 @@ $( document ).ready(function() {
   // DOM 선택 후 변수에 할당
   var menuItems= $('.menu-item');
   var boardTabs = $('.board-tab');
-  var boardTabPanels = $('.board-tab-panel');
+  var boardTabPanels = $('.board-panel');
 
   // 클릭 시 메인 메뉴 제어
   menuItems.on('click', function(){

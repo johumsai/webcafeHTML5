@@ -514,21 +514,28 @@ a{
 
 /* 공지사항 및 자료실 */
 .board{
-  background-color: yellow;
   margin-top: 20px;
+  position: relative;
+  padding-top: 45px;
 }
 
-.board-panel{
-  background-color: pink;
+.board-list, .board-more{
+  display: none;
+}
+
+.is-select .board-list, .is-select .board-more{
+  display: block;
 }
 
 .board-tab{
+  position: absolute;
+  top: 0;
   border: 1px solid #aaa;
   padding: 6px 8px;
   border-radius: 5px 5px 0 0;
-  /* background: #ccc linear-gradient(#ccc, #eee); */
-  background-color: #ccc;
+  background: #ccc linear-gradient(#ccc, #eee);
   color: #666;
+  cursor: pointer;
 }
 
 .is-select .board-tab{
@@ -537,11 +544,47 @@ a{
   border-color: currentColor currentColor #fff currentColor;
 }
 
+.button-notice{
+  left: 0;
+}
+
+.button-archive{
+  left: 66px;
+}
+
 .board-list{
   margin: 0;
   padding-left: 0;
   list-style: none;
-  background-color: skyblue;
+}
+
+.board-list li{
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list li:first-child{
+  margin-top: 0;
+}
+
+.board-list a{
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .board-list li:nth-child(n+2){
+  background-color: teal;
+} */
+
+.board-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 .more::before{
