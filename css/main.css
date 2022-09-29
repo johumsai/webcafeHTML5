@@ -274,11 +274,11 @@ a{
   border-radius: 15px 15px 0 0;
 }
 
-/* .clearfix::after{
+.clearfix::after{
   content: "";
   clear: both;
   display: block;
-} */
+}
 
 .group{
   margin: 0 15px;
@@ -414,25 +414,26 @@ a{
 
 .term-list{
   margin: 10px 0 0 0;
-  background-color: yellow;
 }
 
 .term-list dd{
   margin-left: 0;
 }
 
-.term-list .odd{
-  background-color: pink;
+.term-list-inner{
+  display: flow-root;
+  margin-top: 10px;
 }
 
 .term-list-subject{
-  background-color: lime;
   color: #296897;
   font-weight: 500;
+  width: 140px;
+  float: right;
 }
 
 .term-list-thumbnail{
-  background-attachment: salmon;
+  float: left;
 }
 
 .term-list-thumbnail img{
@@ -440,7 +441,18 @@ a{
 }
 
 .term-list-brief{
-  background-color: aqua;
+  width: 140px;
+  float: right;
+  margin-top: 5px;
+}
+
+.reverse .term-list-subject,
+.reverse .term-list-brief{
+  float: left;
+}
+
+.reverse .term-list-thumbnail{
+  float: right;
 }
 
 
