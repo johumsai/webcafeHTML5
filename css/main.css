@@ -518,15 +518,12 @@ a{
   position: relative;
   padding-top: 45px;
 }
-
 .board-list, .board-more{
   display: none;
 }
-
 .is-select .board-list, .is-select .board-more{
   display: block;
 }
-
 .board-tab{
   position: absolute;
   top: 0;
@@ -537,7 +534,6 @@ a{
   color: #666;
   cursor: pointer;
 }
-
 .is-select .board-tab{
   background: #fff;
   color: #dd422a;
@@ -547,35 +543,29 @@ a{
 .button-notice{
   left: 0;
 }
-
 .button-archive{
   left: 66px;
 }
-
 .board-list{
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
-
 .board-list li{
   margin-top: 8px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-
 .board-list li:first-child{
   margin-top: 0;
 }
-
 .board-list a{
   flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 /* .board-list li:nth-child(n+2){
   background-color: teal;
 } */
@@ -593,14 +583,61 @@ a{
 
 /* 새소식 */
 .news{
-  background-color: lightgreen;
   margin-top: 20px;
+  position: relative;
+}
+
+.news::before{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc linear-gradient(to right, #ccc, #fff);
 }
 
 .news-title{
   font-size: 1.5rem;
   margin: 0;
   color: #dd422a
+}
+
+.news-link{
+  display: block;
+}
+
+.news-item{
+  background-color: pink;
+  margin-top: 35px;
+}
+
+.news-item-title{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  background-color: yellow;
+}
+
+.news-item-date{
+  background-color: salmon;
+}
+
+.news-item-brief{
+  background-color: blueviolet;
+  margin: 0;
+}
+
+.news-item-thumbnail{
+  margin: 0;
+  background-color: lightgreen;
+}
+
+.news-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 /* 슬로건 */
