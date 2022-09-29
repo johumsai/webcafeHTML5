@@ -398,6 +398,53 @@ a{
   color: #f00;
 }
 
+/* 웹 관련 용어 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.term-title{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.term-list{
+  margin: 10px 0 0 0;
+  background-color: yellow;
+}
+
+.term-list dd{
+  margin-left: 0;
+}
+
+.term-list .odd{
+  background-color: pink;
+}
+
+.term-list-subject{
+  background-color: lime;
+  color: #296897;
+  font-weight: 500;
+}
+
+.term-list-thumbnail{
+  background-attachment: salmon;
+}
+
+.term-list-thumbnail img{
+  vertical-align: top;
+}
+
+.term-list-brief{
+  background-color: aqua;
+}
+
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
