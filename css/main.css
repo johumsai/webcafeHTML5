@@ -64,6 +64,43 @@ a{
   position: static;
 }
 
+/* 클래스 모듈 */
+.reset-list{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.normal-style{
+  font-style: normal;
+}
+
+.gradient-effect{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
+  background-color: #ccc;
+}
+
+.spacing-sm{
+  padding: 10px;
+}
+
+.gap-top-md{
+  margin-top: 20px;
+}
+
+.accent-color{
+  color: #dd422a;
+}
+
+.headline{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
@@ -621,12 +658,7 @@ a{
 }
 
 .news-item-title::before{
-  /* content: "■ "; */
-  /* content: "★ "; */
-  /* content: attr(class); */
-  content: attr(name);
-  color: #f00;
-  /* background-color: yellow; */
+  content: "■ ";
 }
 
 .news-item-brief{
@@ -654,11 +686,226 @@ a{
   padding: 8px;
 }
 
+/* 신규이벤트 */
+.event{
+  border-bottom: 1px solid #999;
+}
+
+.event-title{
+  float: left;
+}
+
+.event-button{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-end;
+  /* gap: 5px; */
+}
+
+/* .event-button-prev, .event-button-next */
+.event-button button{
+  width: 19px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: url(./images/back_forward.png);
+}
+
+.event-button-prev{
+  margin-right: 5px;
+}
+
+.event-button-next{
+  background-position: -36px 0 !important;
+}
+
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+
+.event-thumbnail img{
+  box-shadow: 5px 5px 0 0 #999;
+}
+
+/* 관련사이트 */
+.related{
+  padding-top: 10px;
+}
+
+.related-list{
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 250ms, padding 250ms 250ms;
+}
+
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px 0;
+}
+
+.related-list li{
+  height: 25px;
+  padding: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.related-list a{
+  /* display: block; */
+  flex: 0 0 100%;
+  padding: 0 15px;
+}
+
+/* 인기 사이트 */
+.favorite{
+  position: relative;
+}
+
+.favorite-list{
+  margin-top: 10px;
+}
+
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 8px;
+  position: relative;
+}
+
+.favorite-list li::before{
+  display: inline-block;
+  content: counter(number);
+  width: 16px;
+  background: #aaa;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.up, .stop, .down{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 11px;
+  height: 9px;
+  margin-top: -5px;
+  background: url(./images/rank.png) no-repeat;
+}
+
+.stop{
+  background-position: 0 50%;
+}
+
+.down{
+  background-position: 0 100%;
+}
+
+
+
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
 /* 슬로건 */
 .slogan{
-  height: 10vh;
+  position: relative;
+  padding: 15px 80px 15px 180px;
 }
+
+.slogan-title{
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-title::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/coffee.png) no-repeat;
+}
+
+.slogan-content{
+  color: #a09784;
+  margin: 0;
+}
+
+.slogan-content q::before{
+  font-size: 3rem;
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+.slogan-content q::after{
+  content: "";
+}
+
 /* 푸터 */
 .footer{
-  height: 10vh;
+  background: linear-gradient(to bottom, #ccc 0%, #eee 30%, #fff 60%, #fff 100%);
+  background-color: #ccc;
+}
+
+.footer-inner{
+  padding: 15px 80px 15px 180px;
+  position: relative;
+}
+
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 45px;
+  left: 40px;
+}
+
+/* 가이드 링크 목록 */
+.guide-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 4px 40px;
+  background: #7b8385;
+  color: #fff;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.guide-list a{
+  display: block;
+  padding: 6px 10px;
+  text-transform: uppercase;
+}
+
+/* 주소 및 연락처 */
+.address{
+  margin-top: 10px;
+}
+
+.address span:nth-child(n+2){
+  margin-left: 10px;
+}
+
+/* 배지 */
+.badge-container{
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
